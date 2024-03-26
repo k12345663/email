@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/style.css" />
+
+    <title>CartelConnect</title>
+  </head>
+  <body>
+    <div class="one-function-page">
+      <div class="logout">
+        <button class="logout-button" onclick="performPost()">Sign Out</button>
+      </div>
+      <div class="footer">
+        <img
+          width="200"
+          height="30"
+          src="{{url_for('static', filename='logo.jpeg')}}"
+        />
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+    function performPost() {
+      $.ajax({
+        type: "POST",
+        url: "{{url_for('clear')}}",
+        data: { delete: "yes" },
+      }).done(function () {
+        window.location.href = "/";
+      });
+    }
+  </script>
+</html>

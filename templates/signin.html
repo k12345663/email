@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/style.css" />
+
+    <title>Cartel Connect</title>
+  </head>
+  <body>
+    <div class="one-function-page">
+      <div class="logout">
+        <a href="/authorize" class="google-sign-in-button">
+          <img
+            src="{{url_for('static', filename='google.svg')}}"
+            class="google-icon"
+          />
+        </a>
+      </div>
+      <div class="footer">
+        <img
+          width="200"
+          height="30"
+          src="{{url_for('static', filename='logo.jpeg')}}"
+        />
+      </div>
+    </div>
+  </body>
+</html>
