@@ -14,7 +14,6 @@ import googleapiclient.discovery
 from threading import Thread
 from dotenv import load_dotenv
 import json
-os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
 load_dotenv()
 
