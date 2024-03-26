@@ -18,7 +18,8 @@ import json
 load_dotenv()
 
 app = flask.Flask(__name__)
-CORS(app)
+allowed_origins = ['https://connect.cartel.link', 'https://cartel-connect.onrender.com']
+CORS(app, origins=allowed_origins)
 app.secret_key = os.environ.get('FLASK_SECRET_KEY')
 
 myclient = pymongo.MongoClient(os.environ.get('MONGO_URI'))
