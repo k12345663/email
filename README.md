@@ -1,9 +1,11 @@
 > I am not responsible for your actions. By downloading software from this repository, you agree to follow the law. Use it for your own risk. I don't want to be another Oppenheimer and made this tool with good intentions
 
-# Google Sheets Email Sender with OAuth2 Authentication
-
 <div align="center">
-     <b>Send Emails in Seconds</b> using Google Sheets and a User-Friendly Website
+  <br />
+    <img src="./bulk-emails.jpg" alt="Project Banner">
+  <br />
+  <div align="center"><h1> Google Sheets Email Sender with OAuth2 Authentication</h1>
+  <b>Send Emails in Seconds</b> using Google Sheets and a User-Friendly Website </div>
 </div>
 
 ## 📋 <a name="table">Table of Contents</a>
